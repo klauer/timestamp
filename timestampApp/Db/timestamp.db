@@ -25,7 +25,7 @@ record(aSub, "$(Sys)$(Dev)-aSub"){
 	field(FTB,  "DOUBLE")
 	field(INPA, "$(Sys)$(Dev)Sw-Sel NPP NMS")
 	field(INPB, "$(Sys)$(Dev)Val:Time-I NPP NMS")
-	field(NOVA, "1000000")
+	field(NOVA, "$(N)")
 	field(FTVA, "DOUBLE")
 	field(NOVB, "1")
 	field(FTVB, "LONG")
@@ -43,7 +43,7 @@ record(fanout, "$(Sys)$(Dev)-Fout_"){
 record(waveform, "$(Sys)$(Dev)Val:Time-Wfrm"){
 	field(INP,  "$(Sys)$(Dev)-aSub.VALA NPP MS")
 	field(NORD, "10")
-	field(NELM, "1000000")
+	field(NELM, "$(N)")
 	field(FTVL, "DOUBLE")
 }
 
